@@ -1,0 +1,35 @@
+1) para criar o projeto digite: npm init -y
+2) npm install express
+3) npm install typescript
+4) npm install @types/express
+5) configurando o typescript (dentro da pasta do projeto digite) tsc --init
+6) configure o arquivo tsconfig e crie a pasta src
+7) depois de criar o código do servidor faça os passos abaixo para executar o programa:
+   tsc 
+   cd dist
+   node server.js
+8) no package.json insira o seguinte script: "start" "tsc && node ./dist/server.js",
+9) na raiz do projeto digite npm start
+10) npm install sequelize
+    npm install @types/validator
+    npm install mysql2
+    npm install cors
+    npm install @types/cors
+11) Crie o bd no workbench chamado pitu
+12) se for rodar o programa pela primeira vez na máquina (git clone) digite npm install
+
+Aula 01: https://www.youtube.com/embed/RuMM0nJ1GXI?rel=0&amp;modestbranding=1&amp;showinfo=0
+Aula 02: https://www.youtube.com/embed/g0liDjaSBo8?rel=0&amp;modestbranding=1&amp;showinfo=0
+Aula 03: https://www.youtube.com/embed/8YIGPzlxly8?rel=0&amp;modestbranding=1&amp;showinfo=0
+password:  foco
+password:  persistencia
+password:  estudar
+password:  praticar
+password:
+
+
+para registrar domínio gratis: freenom
+https://my.freenom.com/
+
+
+35.173.117.100

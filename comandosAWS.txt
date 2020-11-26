@@ -1,0 +1,26 @@
+#NODE
+curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
+sudo yum install -y nodejs
+
+#MYSQL
+sudo rpm -Uvh https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm 
+sudo yum install mysql-community-server
+sudo systemctl enable mysqld
+sudo systemctl start mysqld
+sudo grep 'temporary password' /var/log/mysqld.log 
+exemplo de senha válida: Mysql2020devaino_           /f,BFQmRr0j<
+
+sudo mysql_secure_installation
+mysql -u root -p
+create schema pitu
+
+#GIT
+sudo yum install git -y
+git clone [endereço do seu repo]
+npm i -g typescript
+
+#PM2
+sudo npm i -g pm2
+sudo pm2 startup
+pm2 start npm --name pitu_backend -- start
+curl -i localhost:3000
