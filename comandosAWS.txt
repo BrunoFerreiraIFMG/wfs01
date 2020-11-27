@@ -17,7 +17,12 @@ create schema pitu
 #GIT
 sudo yum install git -y
 git clone [endereço do seu repo]
-npm i -g typescript
+cd /backend
+npm install
+sudo npm i -g typescript
+tsc
+mude a senha do banco de dados na pasta dist: nano database.js
+tire o tsc do start no arquivo package.json dentro da pasta backend
 
 #PM2
 sudo npm i -g pm2

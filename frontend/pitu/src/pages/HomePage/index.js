@@ -3,6 +3,7 @@ import {Container, InputGroup, FormControl, Button, Alert, Spinner} from 'react-
 import Header from '../../components/Header';
 import {ContentContainer, Form} from './styles';
 import service from '../../services/service';
+import vars from '../../configs/vars'
 
 function HomePage(){
 
@@ -70,7 +71,7 @@ function HomePage(){
                      <>
                        <InputGroup className="mb-3">
                         <FormControl autoFocus={true}
-                                    defaultValue={`https://pitu.tk/${shortnedURL}`}
+                                    defaultValue={vars.HOST_APP+shortnedURL} /*`https://pitu.tk/${shortnedURL}`*/
                                     onChange={e => setUrl(e.target.value)}
                                     ref={input}/>
 
@@ -78,9 +79,9 @@ function HomePage(){
                           <Button variant="outline-secondary" onClick={()=> copyToClipBoard()}>Copiar</Button>
                         </InputGroup.Append>
                        </InputGroup>
-                       <p>Para acompanhar as estatísticas, acesse https://pitu.tk/{shortnedURL}</p>
+                       <p>Para acompanhar as estatísticas, acesse {vars.HOST_APP+shortnedURL}/stats</p> 
                      </>
-                }
+                }                                                 {/* https://pitu.tk/${shortnedURL} */}
 
 
                 { messageError && 

@@ -17,3 +17,6 @@ https://react-bootstrap.github.io/
    yarn add @fortawesome/react-fontawesome
 
 9) yarn add date-fns   (https://date-fns.org/)
+
+
+10) yarn build

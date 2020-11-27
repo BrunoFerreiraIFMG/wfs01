@@ -25,7 +25,8 @@ password:  foco
 password:  persistencia
 password:  estudar
 password:  praticar
-password:
+password:  profissonal
+password:  sucesso
 
 
 para registrar domínio gratis: freenom

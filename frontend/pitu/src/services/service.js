@@ -1,6 +1,8 @@
 import baseAPI from './api';
-
-const api = baseAPI('http://localhost:3001/');
+                    //'http://localhost:3001/'
+                    //yarn start -> busca os dados de development
+                    //yar build  -> busca os dados do production
+const api = baseAPI(process.env.REACT_APP_API);
 
 
 //export default {

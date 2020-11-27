@@ -11,6 +11,7 @@ import ServiceAPI from '../../services/service';
 import {parseISO, formatRelative} from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 import { useParams } from 'react-router-dom';
+import vars from '../../configs/vars';
 
 function StatsPage(props){
 
@@ -64,7 +65,7 @@ function StatsPage(props){
                  :
                  (
                     <StatsContainer className="text-center">
-                     <p><b>https://pitu.tk/{shortnedURL.code}</b></p>
+                     <p><b>{vars.HOST_APP+shortnedURL.code}</b></p> {/*https://pitu.tk/{shortnedURL.code}*/}
                      <p>Redirecionar para: <br/> {shortnedURL.url} </p>
                      <StatsRow className="text-center">
                          <StatsBox>
